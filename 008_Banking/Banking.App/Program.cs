@@ -34,6 +34,7 @@ Account account = accountType.ToLower() switch
     "c" => new CheckingAccount(),
     "b" => new BusinessAccount(),
     "s" => new SavingsAccount(),
+    "f" => new FixxedAccount(),
     _ => throw new ArgumentException("Invalid account type", nameof(accountType))
 };
 
